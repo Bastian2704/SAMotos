@@ -1,0 +1,45 @@
+﻿@model SAMotosMVC.Models.SAMoto
+
+@{
+    ViewData["Title"] = "SADelete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SAMoto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SAmodelo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SAmodelo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SAmarca)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SAmarca)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SAcilindraje)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SAcilindraje)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SAcolor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SAcolor)
+        </dd>
+    </dl>
+    
+    <form asp-action="SADelete">
+        <input type="hidden" asp-for="idSAMoto" />
+        <input type="submit" value="SADelete" class="btn btn-danger" /> |
+        <a asp-action="SAIndex">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<SAMotosMVC.Models.SAMoto>
+
+@{
+    ViewData["Title"] = "SAIndex";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="SACreate">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SAmodelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SAmarca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SAcilindraje)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SAcolor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SAmodelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SAmarca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SAcilindraje)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SAcolor)
+            </td>
+            <td>
+                <a asp-action="SAEdit" asp-route-id="@item.idSAMoto">Edit</a> |
+                <a asp-action="SADetails" asp-route-id="@item.idSAMoto">Details</a> |
+                <a asp-action="SADelete" asp-route-id="@item.idSAMoto">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

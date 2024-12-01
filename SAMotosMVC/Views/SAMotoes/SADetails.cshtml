@@ -1,0 +1,42 @@
+﻿@model SAMotosMVC.Models.SAMoto
+
+@{
+    ViewData["Title"] = "SADetails";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>SAMoto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SAmodelo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SAmodelo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SAmarca)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SAmarca)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SAcilindraje)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SAcilindraje)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SAcolor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SAcolor)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="SAEdit" asp-route-id="@Model?.idSAMoto">Edit</a> |
+    <a asp-action="SAIndex">Back to List</a>
+</div>

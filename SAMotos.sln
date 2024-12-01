@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAMotosMVC", "SAMotosMVC\SAMotosMVC.csproj", "{0DFBD858-6ED7-4124-9E8B-049711407B4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAMotosApi", "SAMotosApi\SAMotosApi.csproj", "{CD636AFE-0E61-42A7-A686-C7866C72294B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DFBD858-6ED7-4124-9E8B-049711407B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFBD858-6ED7-4124-9E8B-049711407B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFBD858-6ED7-4124-9E8B-049711407B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFBD858-6ED7-4124-9E8B-049711407B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD636AFE-0E61-42A7-A686-C7866C72294B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD636AFE-0E61-42A7-A686-C7866C72294B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD636AFE-0E61-42A7-A686-C7866C72294B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD636AFE-0E61-42A7-A686-C7866C72294B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D8E7E0D-8019-4002-893F-392464878FBD}
+	EndGlobalSection
+EndGlobal

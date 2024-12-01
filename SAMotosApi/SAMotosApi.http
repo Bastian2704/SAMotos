@@ -1,0 +1,6 @@
+@SAMotosApi_HostAddress = http://localhost:5126
+
+GET {{SAMotosApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

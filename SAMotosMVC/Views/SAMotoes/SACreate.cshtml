@@ -1,0 +1,48 @@
+﻿@model SAMotosMVC.Models.SAMoto
+
+@{
+    ViewData["Title"] = "SACreate";
+}
+
+<h1>Create</h1>
+
+<h4>SAMoto</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SACreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SAmodelo" class="control-label"></label>
+                <input asp-for="SAmodelo" class="form-control" />
+                <span asp-validation-for="SAmodelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SAmarca" class="control-label"></label>
+                <input asp-for="SAmarca" class="form-control" />
+                <span asp-validation-for="SAmarca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SAcilindraje" class="control-label"></label>
+                <input asp-for="SAcilindraje" class="form-control" />
+                <span asp-validation-for="SAcilindraje" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SAcolor" class="control-label"></label>
+                <input asp-for="SAcolor" class="form-control" />
+                <span asp-validation-for="SAcolor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="SAIndex">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
