@@ -13,7 +13,7 @@ namespace SAMotosMVC.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult SAIndex()
         {
             return View();
         }
