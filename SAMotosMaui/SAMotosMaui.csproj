@@ -63,4 +63,16 @@
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="SAMainPage.xaml.cs">
+	    <DependentUpon>SAMainPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SAAppShell.xaml.cs">
+	    <DependentUpon>SAAppShell.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SAApp.xaml.cs">
+	    <DependentUpon>SAApp.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
 </Project>
